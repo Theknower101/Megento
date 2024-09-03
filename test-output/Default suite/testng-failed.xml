@@ -6,7 +6,13 @@
       <class name="MyTestCase">
         <methods>
           <include name="setUp"/>
+          <include name="configuration"/>
+          <include name="enterFirstName"/>
+          <include name="tear"/>
+          <include name="enterLastName"/>
           <include name="enterPassword"/>
+          <include name="enterEmail"/>
+          <include name="transferToSignUpPage"/>
         </methods>
       </class> <!-- MyTestCase -->
     </classes>
