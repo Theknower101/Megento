@@ -22,8 +22,6 @@ public class SignUpPage extends TestData{
 		lastNameField.sendKeys(lastNames[randomIndexLastName]);
 	}
 	public void enterEmailTest() {
-
-		String emails[]= {"AhmadAllan123@gmal.com","Mohammad123@gmail.com","Ali123@gmail.com","Omar123@gmail.com","Dina123@gmail.com"};
 	      int randomIndexEmail=rand.nextInt(emails.length);
 		WebElement emailField=driver.findElement(By.id("email_address"));
 		emailField.sendKeys(emails[randomIndexEmail]);

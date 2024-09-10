@@ -10,7 +10,7 @@ public class TestData {
 	protected static WebDriver driver;
 	String url="https://magento.softwaretestingboard.com/";
 	Random rand=new Random();
-	
+	String emails[]= {"AhmadAllan123@gmal.com","Mohammad123@gmail.com","Ali123@gmail.com","Omar123@gmail.com","Dina123@gmail.com"};
 	  
 	  @BeforeSuite
 	  public void configuration() {
