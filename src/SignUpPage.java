@@ -29,7 +29,7 @@ public class SignUpPage extends TestData{
 	}
 	public void enterPasswordTest() {
 	    WebElement submitButton=driver.findElement(By.cssSelector("button[title='Create an Account']"));
-		String password[]= {"Aa@123456789","1234567890","Ahmad@12345678900","Beto@000000000","Mohammad1999@0987654321","123"};
+		
 		WebElement confirmPasswordField=driver.findElement(By.id("password-confirmation"));
 		String passwordStringConfirm=confirmPasswordField.getText();
 		String passwordString=driver.findElement(By.id("password")).getText();
@@ -51,8 +51,6 @@ public class SignUpPage extends TestData{
 		        // Check if the password strength is "Strong", "Very Strong", or "Medium"
 		        if (passwordStrength.contains("Strong") || passwordStrength.contains("Very Strong") || passwordStrength.contains("Medium")) {
 		            isStrongOrMedium = true;  
-					System.out.println(passwordString);
-					System.out.println(passwordStringConfirm);// Exit the loop if a strong, very strong, or medium password is found
 		AssertJUnit.assertEquals(passwordStringConfirm.equals(passwordString), true);
 		submitButton.click();
 		if(passwordStringConfirm!=passwordString) {
@@ -61,7 +59,7 @@ public class SignUpPage extends TestData{
 
 		}
 		 }
-		}
+		}	    
 }
 }
 

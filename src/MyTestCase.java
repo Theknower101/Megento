@@ -31,6 +31,10 @@ public void enterPassword() {
 	  sign.enterPasswordTest();
 
 }
+@Test(priority=6)
+public void checkLogoSignUp() {
+	checkLogo();
+}
 }
 //@Test(priority=6)
 //public void confirmTheName() {
