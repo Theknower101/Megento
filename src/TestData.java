@@ -13,8 +13,8 @@ public class TestData {
 	protected static WebDriver driver;
 	String url="https://magento.softwaretestingboard.com/";
 	Random rand=new Random();
-	String emails[]= {"AhmadAllan1234@gmail.com","Mohammad1234@gmail.com"};
-	String password[]= {"Ahmad@12345678900","Mohammad1999@0987654321"};
+	String emails[]= {"AhmadAllan1234@gmail.com","Mohammad1234@gmail.com","Omar@gmail.com","Aaa@1234567890"};
+	String password[]= {"Ahmad@12345678900","Mohammad1999@0987654321","123,Omar123,AhmadAllan@1234567890","00000","Aaa@12345"};
 	  @BeforeSuite
 	  public void configuration() {
 		  if(driver==null) {
